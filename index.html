@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>home</title>
+<style>
+	html,body{ height: 100%; background-color: #c30000; font-family: Verdana, Geneva, sans-serif; margin:0;display: flex; flex-direction: column; }	
+	
+	div {#c30000 #026935}
+	
+	img {max-width: 100%; height: auto;}
+	
+	#container{margin: .8% 20% 0 20%; flex: 1;}
+	
+	#header{align-content: center;}
+	.homeLogo {cursor: pointer;}
+	#pagesBox{margin-top: 40px}
+	.linkBtn{color: navy; font-size: 14px; margin-top: 20px; cursor: pointer; display: block;}
+	
+	#content{display: flex;align-items: center}
+	.gif{}
+	.player{color:white;font-size: 14px;cursor:pointer;text-shadow:0 0 0px black}
+	#footer{padding-bottom: 10px; font-size: 10px; text-align: center; margin-bottom: 0px;}
+	
+<link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+<link href="images/webclip.png" rel="apple-touch-icon">
+	
+</style>
+</head>
+
+<body>
+	<div id="container">
+	
+	<div id="header">
+	<a href="index.html" class=".homeLogo"><img src="images/CHLogo.svg" alt="Name Logo"></a>
+	</div>
+	
+	<div id="pagesBox">
+	<a href="film.html" class="linkBtn">Film</a>
+	<a href="design.html" class="linkBtn">Design</a>
+	<a href="contact.html" class="linkBtn">Contact and external links</a>
+	</div>
+	
+	<div id="content">
+	<div class="gif"><img src="images/face2.gif" alt="Face Gif"></div>
+	<div class="player">
+	<audio id="myAudio" src="audio/SweetSounds.mp3" preload="auto"></audio>
+    <a onclick="togglePlay()">play</a>	
+	</div>
+	</div>
+		
+	</div>
+	
+	<div id="footer">Copyright © 2025 Conor Hébert</div>
+	
+	
+<script>
+ var myAudio = document.getElementById("myAudio");
+      function togglePlay() {
+          return myAudio.paused ? myAudio.play() : myAudio.pause();
+      }  
+	
+</script>
+	
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>design</title>
+<style>
+	html,body{ height: 100%; background-color:; font-family: Verdana, Geneva, sans-serif; margin: 0; display: flex; flex-direction: column; background: url('images/Waterfrony.gif') no-repeat center center fixed; background-size: cover; }	
+	
+	div {#c30000 #026935}
+	
+
+	
+	#container{margin: .8% 20% 0 20%; flex: 1;}
+	
+	#header{align-content: center;}
+	.homeLogo {cursor: pointer;}
+	#pagesBox{margin-top: 40px}
+	.linkBtn{color: navy; font-size: 14px; margin-top: 20px; cursor: pointer; display: block;}
+	
+	#content{display: flex;  flex-direction: column;}
+	.video img {display:flex; justify-content: flex-end; margin-top: 40px; width: 100%; height: auto; border-radius: 0; border: 0 solid black;}
+	.player{color:darkgreen; font-size: 14px;cursor:pointer;text-shadow:0 0 0px black; display:flex; justify-content: flex-end;}
+	#footer{padding:10px 0 10px 0 ;font-size: 10px; text-align: center; margin: 10px 0 10px 0;}
+	
+<link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+<link href="images/webclip.png" rel="apple-touch-icon">
+	
+</style>
+</head>
+
+<body>
+	<div id="container">
+	
+	<div id="header">
+	<a href="index.html" class=".homeLogo"><img src="images/CHLogo.svg" alt="Name Logo"></a>
+	</div>
+	
+	<div id="pagesBox">
+	<a href="film.html" class="linkBtn">Film</a>
+	<a href="design.html" class="linkBtn">Design</a>
+	<a href="contact.html" class="linkBtn">Contact and external links</a>
+	</div>
+	
+	<div id="content">
+		
+	<div class="player">
+	<audio id="myAudio" src="audio/Cowgirl.mp3" preload="auto"></audio>
+    <a onclick="togglePlay()">play</a>	
+		
+	</div>
+ 	<div class="video"><img src="images/theFinger.gif" alt="finger gif"></div>		
+	</div>
+		
+	</div>
+	
+	<div id="footer">Copyright © 2025 Conor Hébert</div>
+	
+	
+<script>
+ var myAudio = document.getElementById("myAudio");
+      function togglePlay() {
+          return myAudio.paused ? myAudio.play() : myAudio.pause();
+      }  
+	
+</script>
+	
+</body>
+</html>

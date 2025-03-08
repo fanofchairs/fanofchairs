@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>film</title>
+<style>
+	html,body{ height: 100%; background-color: #c30000; font-family: Verdana, Geneva, sans-serif; margin:0;display: flex; flex-direction: column;}	
+	
+	div {#c30000 #026935}
+	
+	
+	
+	#container{margin: .8% 20% 0 20%; flex: 1;}
+	
+	#header{align-content: center;}
+	.homeLogo {cursor: pointer;}
+	#pagesBox{margin-top: 40px}
+	.linkBtn{color: navy; font-size: 14px; margin-top: 20px; cursor: pointer; display: block;}
+	
+	#content{display: flex;  flex-direction: column;}
+	.video img {display:flex; justify-content: flex-end; margin-top: 40px; width: 100%; height: auto; border-radius: 0; border: 2px solid black;}
+	.player{color:white;font-size: 14px;cursor:pointer;text-shadow:0 0 0px black}
+	#footer{padding:10px 0 10px 0 ;font-size: 10px; text-align: center; margin: 10px 0 10px 0;}
+	
+<link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+<link href="images/webclip.png" rel="apple-touch-icon">
+	
+</style>
+</head>
+
+<body>
+	<div id="container">
+	
+	<div id="header">
+	<a href="index.html" class=".homeLogo"><img src="images/CHLogo.svg" alt="Name Logo"></a>
+	</div>
+	
+	<div id="pagesBox">
+	<a href="film.html" class="linkBtn">Film</a>
+	<a href="design.html" class="linkBtn">Design</a>
+	<a href="contact.html" class="linkBtn">Contact and external links</a>
+	</div>
+	
+	<div id="content">
+		<div class="video"><img src="images/Frisco.gif" alt="frisco gif"></div>
+		<div class="video"><img src="images/Benny.gif" alt="benny gif"></div>
+		<div class="video"><img src="images/June.gif" alt="june gif"></div>
+		<div class="video"><img src="images/Lighter.gif" alt="lighter gif"></div>
+		<div class="video"><img src="images/Tell.gif" alt="tell gif"></div>
+		<div class="video"><img src="images/HiTech.gif" alt="hitech gif"></div>
+		<div class="video"><img src="images/Kalei1.gif" alt="Kalei 1 gif"></div>
+		<div class="video"><img src="images/Gina.gif" alt="Gina gif"></div>
+		<div class="video"><img src="images/Ab.gif" alt="AB gif"></div>
+	</div>
+		
+	</div>
+	
+	<div id="footer">Copyright © 2025 Conor Hébert</div>
+	
+	
+<script>
+ var myAudio = document.getElementById("myAudio");
+      function togglePlay() {
+          return myAudio.paused ? myAudio.play() : myAudio.pause();
+      }  
+	
+</script>
+	
+</body>
+</html>
